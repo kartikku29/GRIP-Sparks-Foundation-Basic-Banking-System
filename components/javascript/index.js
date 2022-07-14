@@ -2,6 +2,12 @@ function saving() {
     window.location.href = "account_apply.html"
 }
 
+function debit() {
+    alert("Servies Open Soon");
+}
+
+
+
 function check() {
     document.querySelector('.checkbox').classList.toggle('show_check');
     if (document.querySelector('.checkbox').classList.contains('show_check')) {
