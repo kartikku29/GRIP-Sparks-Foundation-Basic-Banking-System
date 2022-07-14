@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Josefin+Sans:wght@300&family=Russo+One&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+p,
+a {
+    font-size: 1.3rem;
+    font-family: 'Gulzar', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 0.25rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: -webkit-linear-gradient(90deg, #ff5e9a, #ffb968);
+    position: relative;
+}
+
+.activemenu {
+    display: none;
+}
+
+.activemenu_img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+
+/* background: -webkit-linear-gradient(90deg, #634dff, #5fd4ff); */
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo>img {
+    width: 100px;
+    height: 90px;
+    margin-left: 20px;
+}
+
+.logo>h1 {
+    padding: 30px;
+    color: white;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+}
+
+ul {
+    margin: 20px;
+}
+
+li {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar>ul>li>a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all .3s ease-in-out 0s;
+}
+
+.navbar>ul>li>a:hover {
+    letter-spacing: 0.2rem;
+}
+
+.navbar>ul>li>a::after {
+    content: "";
+    background-color: #272121;
+    height: 3px;
+    left: 0;
+    margin-top: 2px;
+    position: absolute;
+    bottom: 10px;
+    transition: all .3s ease-in-out 0s;
+    width: 0%;
+}
+
+.navbar>ul>li>a:hover::after {
+    content: "";
+    width: 100%;
+}
+
+
+/*Middle Section Start*/
+
+.middle {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offer {
+    background-image: url(../images/digital_pathway-01.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    height: 70px;
+}
+
+.middle_offer {
+    width: 25%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle_offer>p {
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+.Saving,
+.debit,
+.credit {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 80%;
+    border: 1px solid gainsboro;
+    transition: all .3s ease-in-out 0s;
+}
+
+.Saving {
+    margin-top: 20px;
+    height: 300px;
+    background-image: url(../images/savingaccount.jpg);
+}
+
+.debit {
+    height: 300px;
+    background-image: url(../images/debitcard.jpg);
+}
+
+.credit {
+    height: 350px;
+    background-image: url(../images/creditcard.jpg);
+}
+
+.Saving:hover,
+.debit:hover,
+.credit:hover {
+    width: 90%;
+    height: 350px;
+    /* border: 1px solid gainsboro; */
+}
+
+
+/*Footer Section Start*/
+
+.main_footer {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #444;
+    padding: 1.5rem 0;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+}
+
+
+/*footer Section End*/
+
+
+/*Saving Account Section*/
+
+.disable_account_apply {
+    display: none;
+}
+
+.fill {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+.upper_section,
+.middle_section,
+.last_section {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputbox {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    position: relative;
+}
+
+.inputbox>label {
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    transition: 0.5s;
+    transition: all .3s ease-in-out 0s;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(194, 99, 99);
+    background: transparent;
+    outline: none;
+}
+
+.select {
+    width: 400px;
+    height: 25px;
+    font-size: 16px;
+    margin-top: 30px;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.check {
+    display: flex;
+    justify-content: start;
+    padding: 30px;
+    align-items: center;
+}
+
+.checkbox {
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.checkbox>svg {
+    display: none;
+}
+
+.show_check {
+    background-color: black;
+}
+
+.show_check>svg {
+    display: block;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(246, 118, 118);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media(max-width:1284px) {
+    input {
+        width: 200px;
+        height: 50px;
+    }
+    .select {
+        width: 200px;
+        height: 25px;
+    }
+}
+
+@media(max-width:830px) {
+    .Saving,
+    .debit,
+    .credit {
+        height: 200px;
+    }
+}
+
+
+/*---------------------------Account Section Started-------------------------*/
+
+#table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(238, 232, 232);
+    cursor: pointer;
+    /* border: 2px solid yellow; */
+    /* font-weight: bold; */
+}
+
+th {
+    background-color: rgb(247, 214, 214);
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.deposit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select_account {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.select_value {
+    width: 200px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.add_fund {
+    padding: 10px;
+    background: rgb(231, 140, 76);
+    border-radius: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out 0s;
+}
+
+.add_fund:hover {
+    letter-spacing: 0.25rem;
+}
+
+
+/*Transaction*/
+
+.transaction {
+    width: 100%;
+    height: max-content;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#deposit_details,
+#transfer_detail {
+    margin: 30px 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: rgb(0, 0, 0);
+}
+
+.detail {
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+    background-color: rgb(248, 151, 151);
+    width: 100%;
+}
+
+.transfer_fund {
+    padding: 10px;
+    background: rgb(244, 172, 120);
+    border-radius: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out 0s;
+}
+
+.transfer_fund:hover {
+    letter-spacing: 0.25rem;
+}
+
+.select_account_to,
+.select_account_from {
+    width: 200px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.add_money {
+    margin-top: 30px;
+}
+
+.add_money>label {
+    font-size: 1.3rem;
+}
+
+#table_not_show {
+    display: none;
+}
+
+.contact {
+    width: 100%;
+    height: 500px;
+    /* border-radius: 25px; */
+    margin-top: 20px;
+    background-color: rgb(231, 201, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 1.3rem;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.input_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.form_buttom {
+    margin-top: 50px;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    background: rgb(242, 177, 130);
+    border-radius: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out 0s;
+}
+
+.form_buttom:hover {
+    letter-spacing: 0.25rem;
+}
+
+#exampleFormControlTextarea1 {
+    width: 900px;
+    height: 200px;
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+@media (max-width:1087px) {
+    .activemenu {
+        display: block;
+    }
+    .navbar {
+        position: relative;
+    }
+    .navbar>ul {
+        position: absolute;
+        right: 30px;
+        top: 70px;
+        width: 300px;
+        height: 500px;
+        background-color: rgb(255, 249, 249);
+        border: 1px solid gainsboro;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px;
+        transform: translateY(-120%);
+        transition: 0s linear all;
+        opacity: none;
+        visibility: none;
+    }
+    .navbar.active>ul {
+        opacity: 1;
+        visibility: 1;
+        transform: translateY(0%);
+    }
+    li {
+        width: 60%;
+        margin: 10px 10px 8px;
+        background: #fff0e6;
+        text-align: center;
+        border-radius: 50px;
+        border: none;
+    }
+    .navbar>ul>li>a {
+        color: #f37e20;
+    }
+}
+
+@media (max-width: 930px) {
+    .middle_offer>p {
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width:640px) {
+    td,
+    th {
+        padding: 8px 4px;
+        font-size: 1.2rem;
+    }
+    .upper_section,
+    .middle_section,
+    .last_section {
+        margin: 10px;
+        flex-wrap: wrap;
+    }
+    .middle_section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .select {
+        margin-top: 14px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    td,
+    th {
+        padding: 8px 0px;
+        font-size: 0.6rem;
+    }
+    input {
+        width: 137px;
+        /* height: 50px; */
+    }
+    .select_account {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .select_account_to,
+    .select_account_from {
+        width: 150px;
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .fill {
+        font-size: 1rem;
+    }
+    .middle_offer>p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 590px) {
+    .middle_offer>p {
+        font-size: 1rem;
+        letter-spacing: 0rem;
+        text-align: center;
+    }
+    .logo>img {
+        width: 80px;
+        height: 70px;
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .Saving,
+    .debit,
+    .credit {
+        height: 170px;
+    }
+    .Saving:hover,
+    .debit:hover,
+    .credit:hover {
+        width: 90%;
+        height: 200px;
+        /* border: 1px solid gainsboro; */
+    }
+}
+
+@media (max-width: 337px) {
+    .middle_offer>p {
+        font-size: 1rem;
+        letter-spacing: 0rem;
+        text-align: center;
+    }
+    .logo>img {
+        width: 60px;
+        height: 60px;
+        margin-left: 5px;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    .activemenu_img {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+    }
+    .navbar>ul {
+        width: 230px;
+        height: 500px;
+    }
+    li {
+        width: 70%;
+        /* padding: 5px 15px; */
+        margin: 2px 2px 8px;
+        background: #fff0e6;
+        text-align: center;
+        border-radius: 50px;
+        border: none;
+    }
+    .Saving,
+    .debit,
+    .credit {
+        height: 100px;
+    }
+    .Saving:hover,
+    .debit:hover,
+    .credit:hover {
+        width: 90%;
+        height: 130px;
+        /* border: 1px solid gainsboro; */
+    }
+    .middle_offer>p {
+        font-size: 0.6rem;
+    }
+}

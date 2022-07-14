@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./components/css/style.css">
+    <title>Transfer</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="components/images/logo.png" alt="">
+            <a href="index.html">
+                <h1>Spark Bank</h1>
+            </a>
+
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="account.html">Accounts</a></li>
+            <li><a href="deposit.html">Deposits</a></li>
+            <li><a href="transfer.html">Transfer</a></li>
+            <li><a href="transaction.html">Transaction</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div onclick="addacitive()" class="activemenu">
+            <img class="activemenu_img" src="./components/images/icons8-open-view-50.png" alt="">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg> -->
+        </div>
+    </nav>
+    <!--  -->
+    <div class="offer ">
+        <div class="middle_offer ">
+            <p>Transfer</p>
+        </div>
+    </div>
+
+    <!-- <section class="transfer">
+
+    </section> -->
+    <section class="deposit">
+        <label class="select_account" for=" ">Select From Account Number</label>
+        <select name=" " class="select_account_from">
+            <option value="select">Select</option>
+            <option value="25451235">25451235</option>
+            <option value="25478950">25478950</option>
+            <option value="25412365">25412365</option>
+            <option value="25451448">25451448</option>
+            <option value="25487950">25487950</option>
+            <option value="24589630">24589630</option>
+            <option value="25412304">25412304</option>
+            <option value="24578596">24578596</option>
+            <option value="24156980">24156980</option>
+            <option value="24123557">24123557</option>
+        </select>
+
+    </section>
+    <section class="deposit">
+        <label class="select_account" for=" ">To Account Number</label>
+        <select name=" " class="select_account_to">
+            <option value="select">Select</option>
+            <option value="25451235">25451235</option>
+            <option value="25478950">25478950</option>
+            <option value="25412365">25412365</option>
+            <option value="25451448">25451448</option>
+            <option value="25487950">25487950</option>
+            <option value="24589630">24589630</option>
+            <option value="25412304">25412304</option>
+            <option value="24578596">24578596</option>
+            <option value="24156980">24156980</option>
+            <option value="24123557">24123557</option>
+        </select>
+
+    </section>
+    <section class="deposit">
+
+        <div class=" inputbox add_money">
+            <label class="label" for="">Enter Amount</label>
+            <input type="number" name="" id="transfer_balance">
+        </div>
+        <div onclick="transfer_fund()" class="transfer_fund ">
+            Transfer
+        </div>
+    </section>
+    <table id="table">
+        <thead class="thead ">
+            <tr>
+                <th>Sl. No.</th>
+                <th>Account Number</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tbody class="tbody ">
+            <tr>
+                <td>1</td>
+                <td>25451235</td>
+                <td>Kartik Mishra</td>
+                <td>kartikku098@gmail.com</td>
+                <td id="bal_25451235">50000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>25451448</td>
+                <td>Rahul Roy</td>
+                <td>roy789@gmail.com</td>
+                <td id="bal_25451448">45007</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>25412365</td>
+                <td>Ankit</td>
+                <td>ankit32@gmail.com</td>
+                <td id="bal_25412365">10000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>25478950</td>
+                <td>Aryan Mishra</td>
+                <td>mishraaryan@gmail.com</td>
+                <td id="bal_25478950">48562</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>25487950</td>
+                <td>Kritika</td>
+                <td>kritika@gmail.com</td>
+                <td id="bal_25487950">45623</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>24589630</td>
+                <td>Suparna Mishra</td>
+                <td>suparna@gmail.com</td>
+                <td id="bal_24589630">14789</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>25412304</td>
+                <td>Himanshu</td>
+                <td>himan@gmail.com</td>
+                <td id="bal_25412304">9000</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>24578596</td>
+                <td>Deepak</td>
+                <td>deepak@gmail.com</td>
+                <td id="bal_24578596">78000</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>24156980</td>
+                <td>Aditya</td>
+                <td>aditya@gmail.com</td>
+                <td id="bal_24156980">3600</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>24123557</td>
+                <td>Nidhi Mishra</td>
+                <td>nidhi@gmail.com</td>
+                <td id="bal_24123557">45698</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <footer class="main_footer ">
+        <p class="copyright ">Copyright © Kartik @Sparks Bank</p>
+    </footer>
+</body>
+
+</html>
+<script src="./components/javascript/transfer.js"></script>r
