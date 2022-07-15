@@ -510,6 +510,9 @@ th {
     .navbar {
         position: relative;
     }
+    #exampleFormControlTextarea1 {
+        width: 600px;
+    }
     .navbar>ul {
         position: absolute;
         right: 30px;
@@ -556,6 +559,12 @@ th {
     h1 {
         font-size: 1.7rem;
     }
+    .form-label {
+        margin-right: 10px;
+    }
+    #exampleFormControlTextarea1 {
+        width: 400px;
+    }
 }
 
 @media (max-width:640px) {
@@ -578,6 +587,23 @@ th {
         margin-top: 14px;
         margin-bottom: 15px;
     }
+    .form-label {
+        font-size: 1.3rem;
+        margin-right: 0px;
+        padding: 1px;
+    }
+    #exampleFormControlTextarea1 {
+        width: 300px;
+    }
+    .input_area {
+        flex-direction: column;
+    }
+    .mb-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 @media (max-width:500px) {
@@ -587,7 +613,7 @@ th {
         font-size: 0.6rem;
     }
     input {
-        width: 137px;
+        width: 220px;
         /* height: 50px; */
     }
     .select_account {
@@ -608,6 +634,7 @@ th {
     }
     .middle_offer>p {
         font-size: 0.8rem;
+        padding: 0px;
     }
 }
 
@@ -685,5 +712,8 @@ th {
     }
     .middle_offer>p {
         font-size: 0.6rem;
+    }
+    #exampleFormControlTextarea1 {
+        width: 210px;
     }
 }
